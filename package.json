@@ -5,8 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:prod": "NODE_ENV=production next build",
+    "preview": "cd out && python3 -m http.server 8000",
+    "deploy:check": "./scripts/verify-deploy.sh",
+    "clean": "rm -rf .next out"
   },
   "dependencies": {
     "@next/font": "^14.2.15",

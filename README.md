@@ -7,10 +7,27 @@ Un portafolio moderno y responsivo construido con las últimas tecnologías web 
 - **Diseño Moderno**: Interfaz elegante y profesional con animaciones fluidas
 - **Totalmente Responsivo**: Optimizado para todos los dispositivos y tamaños de pantalla
 - **Modo Oscuro/Claro**: Cambia entre temas con detección automática de preferencias del sistema
+- **Multiidioma**: Soporte completo para español e inglés con React Context
 - **Animaciones Suaves**: Transiciones y efectos visuales con Framer Motion
 - **Navegación Fluida**: Scroll suave entre secciones
 - **Formulario de Contacto**: Sistema de contacto interactivo
 - **SEO Optimizado**: Metadatos optimizados para motores de búsqueda
+- **Despliegue Automático**: CI/CD con GitHub Actions y GitHub Pages
+
+## 🚀 Despliegue Rápido
+
+### Despliegue en GitHub Pages
+
+1. **Fork** este repositorio
+2. Ve a **Settings** → **Pages**
+3. Selecciona **Source**: **GitHub Actions**
+4. El sitio se desplegará automáticamente en cada push a `main`
+
+### URL del sitio
+Tu portafolio estará disponible en: `https://tu-usuario.github.io/porfolio`
+
+### Solución de Problemas
+Si encuentras errores de Jekyll, consulta [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -181,3 +198,8 @@ Si tienes preguntas sobre este proyecto o quieres colaborar:
 ---
 
 **⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!**
+
+## 🌍 Versiones de Idioma
+
+- [🇪🇸 Español](README.md) (Este archivo)
+- [🇺🇸 English](README.en.md)
