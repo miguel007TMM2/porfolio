@@ -1,33 +1,30 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
     const { name, email, subject, message } = await request.json();
 
-    // Validar que todos los campos requeridos estén presentes
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
-        { error: 'Todos los campos son requeridos' },
+        { error: "Todos los campos son requeridos" },
         { status: 400 }
       );
     }
 
-    // Validar formato de email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return NextResponse.json(
-        { error: 'Formato de email inválido' },
+        { error: "Formato de email inválido" },
         { status: 400 }
       );
     }
 
-    // Enviar email
-    const data = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'Portafolio <onboarding@resend.dev>',
-      to: [process.env.CONTACT_EMAIL || 'miguelventuramateo@gmail.com'],
+    await resend.emails.send({
+      from: `Porfolio <${process.env.NEXT_PUBLIC_FROM_EMAIL}>`,
+      to: [process.env.NEXT_PUBLIC_CONTACT_EMAIL || ""],
       subject: `Nuevo mensaje de contacto: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -45,7 +42,7 @@ export async function POST(request: NextRequest) {
           <div style="margin: 20px 0;">
             <h3 style="color: #4F46E5; margin-bottom: 5px;">Mensaje:</h3>
             <div style="background: #f9fafb; padding: 20px; border-radius: 8px; border-left: 4px solid #4F46E5;">
-              ${message.replace(/\n/g, '<br>')}
+              ${message.replace(/\n/g, "<br>")}
             </div>
           </div>
           
@@ -54,37 +51,35 @@ export async function POST(request: NextRequest) {
           </div>
         </div>
       `,
-      // Email de respuesta opcional
       replyTo: email,
     });
 
-    console.log('Email enviado exitosamente:', data);
-
     return NextResponse.json(
-      { 
-        message: 'Email enviado exitosamente',
-        success: true
+      {
+        message: "Email enviado exitosamente",
+        success: true,
       },
       { status: 200 }
     );
-
   } catch (error) {
-    console.error('Error enviando email:', error);
-    
-    // Manejo específico de errores de Resend
-    if (error && typeof error === 'object' && 'message' in error) {
+    console.error("Error enviando email:", error);
+
+    if (error && typeof error === "object" && "message" in error) {
       const resendError = error as { message: string; statusCode?: number };
-      
-      if (resendError.message.includes('API key is invalid')) {
+
+      if (resendError.message.includes("API key is invalid")) {
         return NextResponse.json(
-          { error: 'Configuración de email no válida. Contacta al administrador.' },
+          {
+            error:
+              "Configuración de email no válida. Contacta al administrador.",
+          },
           { status: 500 }
         );
       }
     }
-    
+
     return NextResponse.json(
-      { error: 'Error interno del servidor' },
+      { error: "Error interno del servidor" },
       { status: 500 }
     );
   }
