@@ -15,7 +15,7 @@ export default {
   },
   hero: {
     title: "Hola, soy Miguel Mateo",
-    subtitle: "Desarrollador Frontend",
+    subtitle: "Desarrollador Web Full Stack",
     description: "Apasionado por crear experiencias web únicas y accesibles.",
     projectsButton: "Ver Proyectos",
     contactButton: "Contacto",
@@ -24,18 +24,18 @@ export default {
     title: "Sobre",
     subtitle: "Mí",
     myStory: "Mi Historia",
-    description1: "Soy un desarrollador Full Stack con más de 3 años de experiencia creando aplicaciones web modernas y escalables. Me especializo en el ecosistema de React y Node.js, pero siempre estoy abierto a aprender nuevas tecnologías.",
-    description2: "Mi pasión por la programación comenzó durante mis estudios universitarios y desde entonces no he parado de aprender y crear proyectos que resuelvan problemas reales.",
+    description1: "Soy un desarrollador Full Stack con más de 4+ años de experiencia creando aplicaciones web modernas y escalables. Me especializo en el ecosistema de JavaScript, pero siempre estoy abierto a aprender nuevas tecnologías.",
+    description2: "Mi pasión por la programación comenzó durante mi paso por Cincinnatus Institute of Craftsmanship y desde entonces no he parado de aprender y crear proyectos que resuelvan problemas reales.",
     passion: "Apasionado por el código limpio y las buenas prácticas",
     technologies: "Tecnologías que uso:",
   },
   projects: {
     title: "Mis",
     subtitle: "Proyectos", 
-    featuredProjects: "Proyectos Destacados",
-    otherProjects: "Otros Proyectos",
+    featuredProjects: "Proyectos para Empresas",
+    otherProjects: "Proyectos Personales",
     viewCode: "Código",
-    viewDemo: "Demo",
+    viewSite: "Sitio",
     description: "Aquí están algunos de mis proyectos más recientes. Cada uno refleja mi pasión por el desarrollo web y mi compromiso con la calidad.",
   },
   skills: {
@@ -73,15 +73,14 @@ export default {
       sending: "Enviando..."
     },
     info: {
-      email: "miguel.mateo@example.com",
-      phone: "+34 123 456 789",
-      location: "Madrid, España"
+      email: "miguelventuramateo@gmail.com",
+      phone: "+1 829 906 4741",
+      location: "Santiago, República Dominicana"
     },
     social: {
       followMe: "Sígueme en:",
-      github: "https://github.com/miguelmateo",
-      linkedin: "https://www.linkedin.com/in/miguelmateo/",
-      twitter: "https://twitter.com/miguelmateo"
+      github: "https://github.com/miguel007TMM2",
+      linkedin: "https://www.linkedin.com/in/miguel-rafael-mateo-1527861b8",
     },
     projectQuestion: "¿Tienes un proyecto en mente?"
   },

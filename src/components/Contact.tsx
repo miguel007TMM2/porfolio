@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { useState } from 'react';
 import { useLocale } from './LocaleProvider';
 
@@ -28,13 +28,12 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simular envío de formulario
     await new Promise(resolve => setTimeout(resolve, 2000));
     
-    // Aquí implementarías la lógica real de envío
+
     console.log('Formulario enviado:', formData);
     
-    // Resetear formulario
+
     setFormData({
       name: '',
       email: '',
@@ -80,12 +79,6 @@ export default function Contact() {
       url: t.contact.social.linkedin,
       color: "hover:text-blue-600"
     },
-    {
-      icon: <Twitter size={24} />,
-      name: "Twitter",
-      url: t.contact.social.twitter, 
-      color: "hover:text-blue-400"
-    }
   ];
 
   const containerVariants = {

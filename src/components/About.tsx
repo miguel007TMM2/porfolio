@@ -1,22 +1,33 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { User, Code, Coffee, Heart } from 'lucide-react';
+import { Code, Coffee, Heart } from 'lucide-react';
 import { useLocale } from './LocaleProvider';
-
+import Image from 'next/image';
 export default function About() {
   const { t } = useLocale();
   
-  const skills = [
-    'JavaScript/TypeScript',
-    'React/Next.js',
-    'Node.js',
-    'Python',
-    'SQL/NoSQL',
-    'Docker',
-    'AWS/Azure',
-    'Git/GitHub'
-  ];
+  // const skills = [
+  //   'JavaScript/TypeScript',
+  //   'React/Next.js',
+  //   'Node.js',
+  //   'GraphQL',
+  //   'SQL',
+  //   'NoSQL',
+  //   'Tailwind CSS',
+  //   'Framer Motion',
+  //   'CSS',
+  //   'HTML',
+  //   'Hydrogen',
+  //   'Express.js',
+  //   'Git/GitHub',
+  //   'Asana',
+  //   'Figma',
+  //   'PostgreSQL',
+  //   'TypeORM',
+  //   'English (B2)',
+  //   'Spanish (Native)',
+  // ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -59,8 +70,14 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div variants={itemVariants}>
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center">
-                  <User size={120} className="text-white" />
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center">
+                  <Image
+                    src="/profile-picture.jpeg"
+                    alt="Your Name"
+                    layout="fill"
+                    objectFit="contain"
+                    className="rounded-2xl"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center">
                   <Coffee size={32} className="text-gray-800" />
@@ -85,7 +102,7 @@ export default function About() {
                 <span>{t.about.passion}</span>
               </div>
 
-              <div>
+              {/* <div>
                 <h4 className="text-lg font-semibold mb-3">{t.about.technologies}</h4>
                 <div className="flex flex-wrap gap-2">
                   {skills.map((skill, index) => (
@@ -101,7 +118,7 @@ export default function About() {
                     </motion.span>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </motion.div>

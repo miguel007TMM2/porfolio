@@ -15,7 +15,7 @@ export default {
   },
   hero: {
     title: "Hello, I'm Miguel Mateo",
-    subtitle: "Frontend Developer",
+    subtitle: "Web developer Full Stack",
     description: "Passionate about creating unique and accessible web experiences.",
     projectsButton: "View Projects",
     contactButton: "Contact",
@@ -24,18 +24,18 @@ export default {
     title: "About",
     subtitle: "Me",
     myStory: "My Story",
-    description1: "I'm a Full Stack developer with over 3 years of experience creating modern and scalable web applications. I specialize in the React and Node.js ecosystem, but I'm always open to learning new technologies.",
-    description2: "My passion for programming began during my university studies and since then I haven't stopped learning and creating projects that solve real problems.",
+    description1: "I'm a Full Stack developer with over 4+ years of experience creating modern and scalable web applications. I specialize in the JavaScript ecosystem, but I'm always open to learning new technologies.",
+    description2: "My passion for programming began during my time at Cincinnatus Institute of Craftsmanship and since then I haven't stopped learning and creating projects that solve real problems.",
     passion: "Passionate about clean code and good practices",
     technologies: "Technologies I use:",
   },
   projects: {
     title: "My",
     subtitle: "Projects", 
-    featuredProjects: "Featured Projects",
-    otherProjects: "Other Projects",
+    featuredProjects: "Projects for Companies",
+    otherProjects: "Personal Projects",
     viewCode: "Code",
-    viewDemo: "Demo",
+    viewSite: "Site",
     description: "Here are some of my most recent projects. Each one reflects my passion for web development and my commitment to quality.",
   },
   skills: {
@@ -73,15 +73,14 @@ export default {
       sending: "Sending..."
     },
     info: {
-      email: "miguel.mateo@example.com",
-      phone: "+34 123 456 789",
-      location: "Madrid, Spain"
+      email: "miguelventuramateo@gmail.com",
+      phone: "+1 829 906 4741",
+      location: "Santiago, Dominican Republic"
     },
     social: {
       followMe: "Follow me on:",
-      github: "https://github.com/miguelmateo",
-      linkedin: "https://www.linkedin.com/in/miguelmateo/",
-      twitter: "https://twitter.com/miguelmateo"
+      github: "https://github.com/miguel007TMM2",
+      linkedin: "https://www.linkedin.com/in/miguel-rafael-mateo-1527861b8",
     },
     projectQuestion: "Do you have a project in mind?"
   },
