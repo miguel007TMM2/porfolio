@@ -72,7 +72,7 @@ export default function About() {
               <div className="relative">
                 <div className="w-96 h-96 mx-auto bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center">
                   <Image
-                    src="/profile-picture.jpeg"
+                    src="https://media.licdn.com/dms/image/v2/C4E03AQHI9VOOLOgxWA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619901644862?e=1755734400&v=beta&t=Juqb9NrRqQZPsW3f8MgKrgzOqZQ0lMwwfrTO07iKC-w"
                     alt="Your Name"
                     layout="fill"
                     objectFit="contain"
