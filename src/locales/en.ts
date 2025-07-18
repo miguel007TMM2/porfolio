@@ -70,7 +70,9 @@ export default {
       message: "Message",
       messagePlaceholder: "Tell me about your project...",
       send: "Send Message",
-      sending: "Sending..."
+      sending: "Sending...",
+      success: "Message sent successfully! I'll get back to you soon.",
+      error: "There was an error sending the message. Please try again."
     },
     info: {
       email: "miguelventuramateo@gmail.com",

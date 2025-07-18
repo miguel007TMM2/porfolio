@@ -70,7 +70,9 @@ export default {
       message: "Mensaje",
       messagePlaceholder: "Cuéntame sobre tu proyecto...",
       send: "Enviar Mensaje",
-      sending: "Enviando..."
+      sending: "Enviando...",
+      success: "¡Mensaje enviado exitosamente! Te responderé pronto.",
+      error: "Hubo un error al enviar el mensaje. Por favor intenta de nuevo."
     },
     info: {
       email: "miguelventuramateo@gmail.com",
