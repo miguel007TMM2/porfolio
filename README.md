@@ -2,18 +2,6 @@
 
 Un portafolio moderno y responsivo construido con las últimas tecnologías web para mostrar mis habilidades y proyectos como desarrollador Full Stack.
 
-## ✨ Características
-
-- **Diseño Moderno**: Interfaz elegante y profesional con animaciones fluidas
-- **Totalmente Responsivo**: Optimizado para todos los dispositivos y tamaños de pantalla
-- **Modo Oscuro/Claro**: Cambia entre temas con detección automática de preferencias del sistema
-- **Multiidioma**: Soporte completo para español e inglés con React Context
-- **Animaciones Suaves**: Transiciones y efectos visuales con Framer Motion
-- **Navegación Fluida**: Scroll suave entre secciones
-- **Formulario de Contacto**: Sistema de contacto interactivo
-- **SEO Optimizado**: Metadatos optimizados para motores de búsqueda
-- **Despliegue Automático**: CI/CD con GitHub Actions y GitHub Pages
-
 ## 🚀 Despliegue Rápido
 
 ### Despliegue en GitHub Pages
@@ -24,10 +12,7 @@ Un portafolio moderno y responsivo construido con las últimas tecnologías web 
 4. El sitio se desplegará automáticamente en cada push a `main`
 
 ### URL del sitio
-Tu portafolio estará disponible en: `https://tu-usuario.github.io/porfolio`
-
-### Solución de Problemas
-Si encuentras errores de Jekyll, consulta [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+Tu portafolio estará disponible en: `https://miguel007tmm2.github.io/porfolio`
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -119,33 +104,6 @@ src/
 │   └── Skills.tsx        # Sección de habilidades
 public/                    # Archivos estáticos
 ```
-
-## 🎨 Personalización
-
-### Colores y Temas
-Los colores principales están definidos en `globals.css`. Puedes personalizar:
-- Gradientes de marca
-- Colores de modo oscuro/claro
-- Colores de acento para botones y enlaces
-
-### Contenido Personal
-Actualiza la información en cada componente:
-- **Hero**: Nombre, título y descripción personal
-- **About**: Historia, habilidades y experiencia
-- **Projects**: Tus proyectos reales con enlaces
-- **Skills**: Tus tecnologías y niveles de competencia
-- **Contact**: Tu información de contacto real
-
-### Animaciones
-Las animaciones están configuradas con Framer Motion y pueden ajustarse en cada componente según tus preferencias.
-
-## 📊 Optimizaciones Incluidas
-
-- **Performance**: Carga lazy de componentes y optimización de imágenes
-- **SEO**: Metadatos optimizados y estructura semántica
-- **Accesibilidad**: Navegación por teclado y etiquetas ARIA
-- **Core Web Vitals**: Optimizado para métricas de rendimiento de Google
-
 ## 🌐 Despliegue
 
 ### Vercel (Recomendado)
@@ -191,9 +149,8 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 
 Si tienes preguntas sobre este proyecto o quieres colaborar:
 
-- **Email**: tu.email@ejemplo.com
-- **LinkedIn**: [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)
-- **GitHub**: [github.com/tuusuario](https://github.com/tuusuario)
+- **LinkedIn**: [linkedin.com](https://www.linkedin.com/in/miguel-rafael-mateo-1527861b8)
+- **GitHub**: [github.com](https://github.com/miguel007TMM2)
 
 ---
 
